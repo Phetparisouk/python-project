@@ -1,6 +1,14 @@
-<h1>Machine learning : Déploiement d’un modèle de ML via une API RESTfull </h1>
+<h1>Déploiement d’un modèle de ML via une API RESTfull </h1>
 
-<h5>Après avoir cloné le projet, se rendre à la racine et lancer la commande "python launch.py"</h5>
+<p>
+  Avant de commencer, veillez installer les modules suivantes si cela n'a pas été fait auparavant avec les commandes : <br/>
+  pip install unidecode nltk stop_words sklearn pandas requests <br/>
+  python 
+    >>import nltk;
+    >>nltk.download()
+</p>
+
+<h5>Une fois avoir cloné le projet, se rendre à la racine et lancer la commande "python launch.py"</h5>
 
 <h5>Les routes sont accessibles depuis le fichier notebook ipynb</h5>
 <h5>Compilez les cellules de ce notebook pour un premier aperçu de l'API</h5>
