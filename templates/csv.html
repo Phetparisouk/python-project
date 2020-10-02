@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <!-- Chargement du csv pour la saisie personnalisee -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="tuto">
+    <h2 class="w3-wide w3-center">Chargement de votre CSV</h2>
+    <h4 class="w3-wide w3-center">(ne fonctionne pas actuellement par manque de temps)</h4>
+    <p class="w3-opacity w3-center"><i>Chargez votre CSV en cliquant sur la bande ci-dessous.<br/>Une fois fini, cliquez sur le bouton "Publier" pour confirmer votre chargement de données.<br/> Vous serez redirigé par la suite vers la page de test de message de votre CSV.</i></p>
+    <div class="w3-row w3-center w3-padding-32">
+      <div>
+        <form action="/action_page.php" target="_blank">
+          <input class="w3-input w3-border w3-center" type="file" id="myfile" name="myfile" required name="myfile"><br><br>
+          <button class="w3-button w3-black w3-section" type="submit">Publier</button>
+        </form>
+        <div>
+            <img src="../static/images/csv.jpg"  style="width:50%">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {% endblock %}
+
+
+
+

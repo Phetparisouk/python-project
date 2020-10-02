@@ -1,0 +1,72 @@
+  {% extends "base.html" %}
+
+  {% block content %}
+
+  <!-- A propos -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="apropos">
+    <h2 class="w3-wide">Positif ou Negatif ?</h2>
+    <p class="w3-opacity"><i>Phetparisouk SOUVANNASACD</i></p>
+    <p class="w3-justify">Equipe de 3 elites passionnees du python, ce site a pour but de tester si votre saisi de texte
+      renvoie une reponse favorable ou non a un produit. </p>
+    <div class="w3-row w3-padding-32">
+      <div>
+        <img src="../static/images/positif_ou_negatif.jpg" style="width:50%">
+      </div>
+    </div>
+  </div>
+
+  <!-- Le dilemme -->
+  <div class="w3-black" id="ledilemme">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">LE DILEMME</h2>
+      <p class="w3-opacity w3-center"><i>Choisissez votre action</i></p><br>
+
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>Formulaire de texte</b></p>
+            <p class="w3-opacity">Choix 1</p>
+            <p>Testez directement l'application avec l'API pre-installe dans le site !</p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>Entrainer votre modele</b></p>
+            <p class="w3-opacity">Choix 2</p>
+            <p>Obtenir le resultat de fiabilite moyen de votre modele d'API!</p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>Charger votre CSV</b></p>
+            <p class="w3-opacity">Choix 3</p>
+            <p>Telecharcher votre propre fichier .csv et Testez votre modele !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+{% endblock %}
